@@ -22,7 +22,7 @@ Find the recipe that takes the most time to prepare.
   SELECT * FROM recipes WHERE minutes_required = (SELECT MIN(minutes_required) from recipes);
 
 Find all the robots whose name starts with the letter M.
-  SELECT * FROM robots where name LIKE 'M%';
+  SELECT * FROM robots WHERE name LIKE 'M%';
 
 Count the number of board games that can be played by 8 people.
   SELECT COUNT(*) FROM board_games WHERE min_players <= 8 AND max_players >= 8;
